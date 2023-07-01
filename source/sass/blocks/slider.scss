@@ -1,0 +1,130 @@
+.slider {
+  margin-bottom: 40px;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
+}
+
+.slider__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 30px 0;
+
+  list-style: none;
+}
+
+.slider__item {
+  width: 96px;
+  height: 124px;
+  padding: 30px 25px;
+
+  background-color: $color-transparent;
+  box-shadow: 0 4px 16px $color-shadow;
+  border-radius: 16px;
+
+  @include hover-focus {
+    transform: scale(1.1);
+
+    background-color: $color-default-white;
+  }
+
+  @include vp-1023 {
+    width: 68px;
+    height: 88px;
+    padding: 20px 17px;
+  }
+}
+
+.slider__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  font-family: $ff-placeholder;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: $color-lightgrey;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  @include vp-1023 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.slider__button-text {
+  font-size: 20px;
+  line-height: 24px;
+
+  @include vp-1023 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.slider__item--current {
+  background-color: $color-default-white;
+}
+
+.slider__item--current .slider__button {
+  color: $color-green;
+}
+
+.slider__toogle-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.slider__toogle {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+
+  font-family: $ff-placeholder;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: $color-default-darkblue;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
+  @include active {
+    opacity: 0.3;
+  }
+}
+
+.slider__icon--back {
+  margin-right: 10px;
+  transform: rotate(180deg);
+}
+
+.slider__icon--forward {
+  margin-left: 10px;
+}

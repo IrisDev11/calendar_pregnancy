@@ -1,0 +1,138 @@
+.form--registration {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__heading {
+  margin: 0 0 30px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.form__input input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+
+  font-family: $ff-placeholder;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: $color-default-darkblue;
+
+  border: 1px solid $color-grey-300;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-family: $ff-placeholder;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: $color-grey-400;
+  }
+}
+
+.form__button {
+  width: 100%;
+  margin-top: 10px;
+
+  &--sign-in {
+    margin-bottom: 20px;
+  }
+
+  &--registration {
+    margin-bottom: 15px;
+  }
+}
+
+.form__password--opened {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../img/svg/password-opened.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+  }
+}
+
+.form__password--closed {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/svg/password-closed.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+  }
+}
+
+.form__checkbox-approval {
+  order: 6;
+}
+
+.form__checkbox-approval label {
+  display: block;
+  position: relative;
+  margin-left: 10px;
+  padding-left: 28px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: $color-grey-400;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid $color-grey-300;
+    border-radius: 4px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 13px;
+    height: 11px;
+
+    background-image: url("../img/svg/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 11px;
+  }
+}
+
+.form__checkbox-approval input:checked + label::before {
+  background-color: $color-blue;
+  border: 1px solid $color-grey-300;
+}
+
+.form__checkbox-approval input:focus ~ label {
+  border: 1px solid $color-grey-400;
+}

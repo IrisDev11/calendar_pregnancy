@@ -1,0 +1,9 @@
+.user-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1023 {
+    display: none;
+  }
+}

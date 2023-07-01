@@ -1,0 +1,67 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-darkblue:            #384a68;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0.1);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+$color-green:                       #2a9c9e;
+$color-blue:                        #2371f9;
+$color-lightgrey:                   #cdd1d9;
+$color-grey:                        #9ba4b3;
+$color-mauvelous:                   #ff9ea8;
+$color-persian-pink:                #ec75af;
+$color-yellow:                      #eae206;
+$color-lightgreen:                  #008000;
+$color-lightpink:                   #fff5ff;
+$color-pink-300:                    #f5ebf5;
+$color-grey-300:                    #e7e8eb;
+$color-grey-400:                    #b1b7c1;
+$color-shadow:                      rgba(77, 91, 163, 0.1);
+
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        18px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$ff-rouble:                         "Rouble", "Arial", sans-serif;
+
+$ff-placeholder:                    "Inter", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       2dppx;

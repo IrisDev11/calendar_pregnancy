@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 151px;
+
+  @include vp-1023 {
+    min-height: 91px;
+    padding-top: 21px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  margin-right: 30px;
+}
+
+.header__logo-icon {
+  margin-right: 33px;
+
+  @include vp-1023 {
+    width: 61px;
+    height: 70px;
+    margin-right: 8px;
+  }
+}
+
+.header__logo-text {
+  margin-top: 7px;
+
+  @include vp-1023 {
+    width: 217px;
+    height: 59px;
+  }
+
+  @include vp-767 {
+    width: 185px;
+    height: 52px;
+  }
+}

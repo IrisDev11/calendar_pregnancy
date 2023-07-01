@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Приложение для беременных Календарь беременности.">
+  <title>Календарь беременности</title>
+  <link rel="preload" href="fonts/inter-v12-latin-regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/inter-v12-latin-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/inter-v12-latin-300.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/inter-v12-latin-300.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/inter-v12-latin-700.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/inter-v12-latin-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RubikOne-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RubikOne-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/pacifico-v22-latin-regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/pacifico-v22-latin-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__wrapper">
+        <a class="header__logo">
+          <svg class="header__logo-icon" width="77" height="88">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+          <svg class="header__logo-text" width="329" height="92">
+            <use xlink:href="img/sprite.svg#logo-text"></use>
+          </svg>
+        </a>
+        <!-- <nav class="nav nav--closed">
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Кнопка открытия-зактытия меню.</span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current">Недели</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Календарь</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Счетчики</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Форумы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Партнерская программа</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#" data-open-modal="sign-in">
+              <span class="visually-hidden">Войти в профиль</span>
+              <svg width="29" height="30">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> -->
+      </div>
+    </header>
+    <main class="main">
+      <article class="content__text">
+        <h2>Как понять, что у тебя овуляция.</h2>
+        <p>Вот что происходит внутри твоего тела:</p>
+        <ul class="article__list">
+          <li class="article__item">В шейке матки присутствует слизистая пробка, и перед овуляцией она размягчается, чтобы помочь сперматозоидам попасть в матку и далее к яйцеклетке. Эта слизь выглядит как яичный белок, и сейчас она более водянистая и менее вязкая, чем обычно.</li>
+          <li class="article__item">Ваша базальная температура повышается на пару градусов. Если в течение пары месяцев вы будете вести график базальной температуры, вы увидите, как она меняется перед овуляцией, и сможете научиться определять самое благоприятное для зачатия время.</li>
+          <li class="article__item">В аптеках продаются специальные тесты слюны и мочи, которые могут выявить гормональные изменения и подсказать вам, когда наступит овуляция.</li>
+        </ul>
+        <p>Также существуют некоторые внешние изменения, которые могут указывать на овуляцию:</p>
+        <ul class="article__list">
+          <li class="article__item">Бывает, что перед овуляцией обостряется обоняние или появляется повышенная чувствительность к запахам, на которые женщина обычно не обращает внимания.</li>
+          <li class="article__item">У некоторых женщин увеличивается либидо, они становятся более страстными. С точки зрения биологии это естественный механизм поощрения супружеских пар к занятию сексом в самый благоприятный период цикла.</li>
+          <li class="article__item">Оплодотворение яйцеклетки возможно в течение примерно 12–24 часов после высвобождения из фолликула. Сперматозоиды могут прожить гораздо дольше, около 3–5 дней. Это означает, что они могут подождать несколько дней внутри, пока не представится возможность для успешного зачатия.</li>
+        </ul>
+        <p>Если вы пытаетесь забеременеть, вам стоит заниматься сексом для зачатия в планируемый день овуляции плюс-минус два дня от него.</p>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <a class="footer__copyright" href="#">© Copyright, pregnancy&nbsp;2023</a>
+        <!-- <div class="nav nav--footer">
+          <ul class="nav__list nav__list--footer">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current">Недели</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Календарь</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Счетчики</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Форумы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Партнерская программа</a>
+            </li>
+          </ul>
+        </div> -->
+        <section class="social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в Телеграмм</span>
+                <svg width="30" height="30">
+                  <use xlink:href="img/sprite.svg#telegramm"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы во Вконтакте</span>
+                <svg width="30" height="30">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в Одноклассниках</span>
+                <svg width="30" height="30">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+<!-- Модальное окно -->
+<div class="modal modal--preload" data-modal="sign-in">
+  <div class="modal__wrapper">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__content">
+      <div class="form__wrapper">
+        <h2 class="form__heading">Войти</h2>
+        <div>
+          <form class="form form--sign-in" action="#" method="post">
+            <div class="form__input form__sign-in-login">
+              <input type="mailto" name="sign-in-login" id="sign-in-login" placeholder="Введите логин"
+                aria-label="Введите логин." required>
+            </div>
+            <div class="form__input form__password--opened">
+              <input type="password" name="sign-in-password" id="sign-in-password" placeholder="Введите пароль"
+                aria-label="Введите пароль." required>
+            </div>
+            <button class="btn btn--lightpink form__button form__button--sign-in-vk" type="button">
+              <span>Войти с помощью</span>
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#vk-sign-in"></use>
+              </svg>
+            </button>
+            <button class="btn form__button form__button--sign-in" type="submit">Войти</button>
+          </form>
+          <div class="modal__bottom-wrapper">
+            <a class="modal__link modal__link--forgot-password" href="#">Я забыла свой пароль</a>
+            <p class="modal__text">У вас уже есть учетная запись?</p>
+            <a class="modal__link modal__link--registration" href="#" data-open-modal="registration">Зарегистрироваться</a>
+          </div>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="28" height="28">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal modal--preload" data-modal="registration">
+  <div class="modal__wrapper">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__content">
+      <div class="form__wrapper">
+        <h2 class="form__heading">Регистрация</h2>
+        <div>
+          <form class="form form--registration" action="#" method="post">
+            <div class="form__input">
+              <input type="mailto" name="registration" id="registration" placeholder="Введите логин / e-mail"
+                aria-label="Введите логин / e-mail." required>
+            </div>
+            <div class="form__input form__password--opened">
+              <input type="password" name="registration-password" id="registration-password" placeholder="Введите пароль"
+                aria-label="Введите пароль." required>
+            </div>
+            <div class="form__input form__password--opened">
+              <input type="password" name="registration-password" id="registration-password" placeholder="Повторите пароль"
+                aria-label="Повторите пароль." required>
+            </div>
+            <div class="form__checkbox-approval">
+              <input class="visually-hidden" type="checkbox" name="data" id="approval" checked required>
+              <label for="approval">Согласие на&nbsp;обработку<br>персональных данных</label>
+            </div>
+            <button class="btn btn--lightpink form__button form__button--registration-vk" type="button">
+              <span>Регистрация с помощью</span>
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#vk-sign-in"></use>
+              </svg>
+            </button>
+            <button class="btn form__button form__button--registration" type="submit">Зарегистрироваться</button>
+          </form>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="28" height="28">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
